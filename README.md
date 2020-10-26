@@ -1,6 +1,4 @@
-`npm run serve` to run both client & server project concurrently 
- 
-`npm run build` to build both client & server project to dist/
+`npm run serve` to run server project 
 
 ## How to run
 
@@ -9,6 +7,4 @@
 
 App will be avaliable at:
 
-Front: http://localhost:8000/
-
-API: http://localhost:4000/
+API: http://localhost:4001/
