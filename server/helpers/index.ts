@@ -18,10 +18,10 @@ export const readAllContentFromFile = async () => {
 }
 
 export const getMovieId = (movies: Movie[]) => {
-  return [...movies][movies.length - 1].id + 1
+  return _.maxBy(movies, 'id').id + 1
 }
 
-export const findMovie = (movies: Movie[], title: string) => {
+export const findMovieIndex = (movies: Movie[], title: string) => {
   return _.findIndex(movies, movie => movie.title === title)
 }
 

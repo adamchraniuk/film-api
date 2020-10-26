@@ -1,4 +1,4 @@
-import { findMovie, getMovieId, readAllContentFromFile, writeContentToFile, checkErrors } from '../helpers'
+import { findMovieIndex, getMovieId, readAllContentFromFile, writeContentToFile, checkErrors } from '../helpers'
 import { Request, Response } from 'express'
 import { Movie } from '../types/types'
 import * as _ from 'lodash'
@@ -17,7 +17,7 @@ const addNewMovie = async (req: Request, res: Response) => {
     return res.status(400).json(errors)
   }
 
-  const movieExist = findMovie(data.movies, requestBody.title)
+  const movieExist = findMovieIndex(data.movies, requestBody.title)
   if (movieExist !== -1) {
     data.movies[movieExist] = {
       ...data.movies[movieExist],
