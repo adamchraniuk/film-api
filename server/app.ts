@@ -6,7 +6,7 @@ import moviesRouter from './routes/movies'
 dotenv.config()
 const app = express()
 
-app.set('port', 4001)
+app.set('port', 4000)
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use('/', moviesRouter)
