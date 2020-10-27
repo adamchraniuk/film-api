@@ -6,6 +6,7 @@
   "author": "Adam",
   "scripts": {
     "serve": "nodemon --config ./nodemon.config.json",
+    "server:build": "rimraf dist/server && tsc -p tsconfig.server.json",
     "down": "docker-compose down -v"
   },
   "dependencies": {
