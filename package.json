@@ -8,7 +8,6 @@
     "serve": "nodemon --config ./nodemon.config.json",
     "server:build": "rimraf dist/server && tsc -p tsconfig.server.json",
     "test": "npx jest --config ./jest.config.unit.js",
-    "test:watch": "npx jest --config ./jest.config.unit.js --watch",
     "down": "docker-compose down -v"
   },
   "engines": {

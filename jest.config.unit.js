@@ -5,7 +5,6 @@ module.exports = {
     '/node_modules/',
     '/lib/',
   ],
-  testMatch: [
-    "**/?(*.)+(spec|test).[jt]s?(x)"
+  testMatch: [    "**/?(*.)+(spec|test).[jt]s?(x)"
   ]
 };
