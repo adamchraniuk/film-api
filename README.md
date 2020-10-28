@@ -1,10 +1,10 @@
 `npm run serve` to run server project 
 
-### How to run
+# How to run
 
 npm run serve
 
-### Locally with docker
+# Locally with docker
 1. `docker-compose up`
 
 App will be avaliable at:
@@ -14,7 +14,7 @@ http://localhost:4000/
 
 ## Endpoints
 
-####Method GET:
+###Method GET:
 
 `/api/movies` - return all movies
 
@@ -32,14 +32,14 @@ Without any parameter, returns a random movie.
 
 Without genres parameter, return random movie in duration length +/- 10
 
-####Method POST:
+###Method POST:
 
 `/movies`
 
 Add films to file. Body as application/json:
 
 
-####Array of predefined strings:
+###Array of predefined strings:
 
 `  [
        "Comedy",
