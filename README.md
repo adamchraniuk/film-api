@@ -38,23 +38,56 @@ Without genres parameter, return random movie in duration length +/- 10
 
 Add films to file. Body as application/json:
 
+
+####Array of predefined strings:
+
+`  [
+       "Comedy",
+       "Fantasy",
+       "Crime",
+       "Drama",
+       "Music",
+       "Adventure",
+       "History",
+       "Thriller",
+       "Animation",
+       "Family",
+       "Mystery",
+       "Biography",
+       "Action",
+       "Film-Noir",
+       "Romance",
+       "Sci-Fi",
+       "War",
+       "Western",
+       "Horror",
+       "Musical",
+       "Sport"
+   ]`
+
+Data types and required:
+
 {
-  genres: 'required|array', // -> array of predefined strings (from file db.json)
-  title: 'required|string|max:255',
-  year: 'required|number',
-  runtime: 'required|number',
-  director: 'required|string|max:255',
-  actors: 'optional|string',
-  plot: 'optional|string',
-  posterUrl: 'optional|string'
+
+    genres: 'required|array',
+    title: 'required|string|max:255',
+    year: 'required|number',
+    runtime: 'required|number',
+    director: 'required|string|max:255',
+    actors: 'optional|string',
+    plot: 'optional|string',
+    posterUrl: 'optional|string'
+  
 }
 
 example:
 
 {
-	"genres": ["Drama"],
-	"title": "Test title",
-	"year": 2020,
-	"runtime": 110,
-	"director": "Adam"
+
+	genres: ["Drama"],
+	title: "Test title",
+	year: 2020,
+	runtime: 110,
+	director: "Adam"
+	
 }
