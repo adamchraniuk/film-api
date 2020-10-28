@@ -19,8 +19,10 @@ http://localhost:4000/
 `/api/moviesByParams` - it takes two optional parameters
 
 {
-    duration: 'string',
-    genres: 'required|array', // -> array of predefined strings (from file db.json)
+
+    duration: 'optional"string',
+    genres: 'optional|array', // -> array of predefined strings (from file db.json)
+    
 } 
 
 
