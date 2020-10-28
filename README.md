@@ -1,6 +1,8 @@
 `npm run serve` to run server project 
 
-## How to run
+### How to run
+
+npm run serve
 
 ### Locally with docker
 1. `docker-compose up`

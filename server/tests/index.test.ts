@@ -1,5 +1,4 @@
 import bodyParser from 'body-parser'
-import * as _ from 'lodash'
 import app from '../app'
 import { Movie, Error } from '../types/types'
 
