@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "commonjs",
+    "target": "ES2019",
     "outDir": "dist/server",
     "strict": true,
     "importHelpers": true,
@@ -20,6 +20,7 @@
     },
     "lib": [
       "esnext",
+      "ES2019",
       "dom",
       "dom.iterable",
       "scripthost"

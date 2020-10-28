@@ -7,19 +7,24 @@
   "scripts": {
     "serve": "nodemon --config ./nodemon.config.json",
     "server:build": "rimraf dist/server && tsc -p tsconfig.server.json",
+    "test": "npx jest --config ./jest.config.unit.js",
+    "test:watch": "npx jest --config ./jest.config.unit.js --watch",
     "down": "docker-compose down -v"
+  },
+  "engines": {
+    "node": "10"
   },
   "dependencies": {
     "@types/lodash": "^4.14.162",
-    "axios": "^0.20.0",
     "body-parser": "^1.19.0",
     "core-js": "^3.6.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
+    "jest": "^26.6.1",
     "lodash": "^4.17.20",
-    "mysql2": "^2.1.0",
-    "pg-promise": "^10.7.0"
+    "pg-promise": "^10.7.0",
+    "ts-jest": "^26.4.3"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.8",
@@ -41,6 +46,7 @@
     "rimraf": "^3.0.2",
     "sass": "^1.26.3",
     "sass-loader": "^8.0.2",
+    "supertest": "^5.0.0",
     "ts-node": "^8.8.2",
     "typescript": "~3.8.3"
   },
@@ -49,13 +55,11 @@
     "env": {
       "node": true
     },
-    "extends": [
-    ],
+    "extends": [],
     "parserOptions": {
       "ecmaVersion": 2020,
       "sourceType": "module"
     },
-
     "rules": {
       "no-unused-vars": "off"
     }

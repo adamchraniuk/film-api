@@ -4,7 +4,7 @@ import { testAddNewMovie, testGetFilteredMovies } from '../helpers/validate'
 
 const router = express.Router()
 
-router.get('/', (req, res) => res.send('ok'))
+router.get('/', (req, res) => res.send('OK'))
 
 router.get('/api/movies', getAllMovies)
 router.get('/api/moviesByParams', testGetFilteredMovies, getFilteredMovies)

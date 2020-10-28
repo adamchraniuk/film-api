@@ -3,8 +3,8 @@
     "allowJs": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "target": "esnext",
-    "module": "esnext",
+    "module": "commonjs",
+    "target": "ES2019",
     // "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
@@ -25,6 +25,7 @@
     "lib": [
       "esnext",
       "dom",
+      "ES2019",
       "dom.iterable",
       "scripthost"
     ]

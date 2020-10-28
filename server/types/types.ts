@@ -9,3 +9,10 @@ export interface Movie {
   plot?: string
   posterUrl?: string
 }
+
+export interface Error {
+  value: string
+  msg: string
+  param: string
+  location: string
+}
